@@ -97,7 +97,7 @@ Pod::Spec.new do |spec|
     ss.source_files = 'FBDevelopKit/FBDevelopKit/FBImage/*.{h,m}'
   end
   spec.subspec 'Http' do |ss|
-    ss.source_files = 'FBDevelopKit/FBDevelopKit/Http/**/*.{h,m}','FBDevelopKit/FBDevelopKit/Http/**/**/*.{h,m}'
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/Http/**/*.{h,m,mm}','FBDevelopKit/FBDevelopKit/Http/**/**/*.{h,m,mm}'
   end
   spec.subspec 'FBFont' do |ss|
     ss.source_files = 'FBDevelopKit/FBDevelopKit/FBFont/*.{h,m}'
