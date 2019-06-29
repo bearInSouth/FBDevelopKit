@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04228C3A22C356C5004350EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C3922C356C5004350EC /* AppDelegate.m */; };
+		04228C3D22C356C5004350EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C3C22C356C5004350EC /* ViewController.m */; };
+		04228C4022C356C5004350EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04228C3E22C356C5004350EC /* Main.storyboard */; };
+		04228C4222C356C7004350EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04228C4122C356C7004350EC /* Assets.xcassets */; };
+		04228C4522C356C7004350EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04228C4322C356C7004350EC /* LaunchScreen.storyboard */; };
+		04228C4822C356C7004350EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C4722C356C7004350EC /* main.m */; };
+		04228C5222C356C7004350EC /* FBDevelopKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C5122C356C7004350EC /* FBDevelopKitTests.m */; };
+		04228C5D22C356C7004350EC /* FBDevelopKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C5C22C356C7004350EC /* FBDevelopKitUITests.m */; };
+		04228C7022C3587A004350EC /* FBPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C6F22C3587A004350EC /* FBPath.m */; };
+		04228C7422C35C85004350EC /* UIColor+FBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C7322C35C85004350EC /* UIColor+FBColor.m */; };
+		04228C7822C35D4B004350EC /* NSData+FBEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C7722C35D4B004350EC /* NSData+FBEncryption.m */; };
+		04228C7E22C36310004350EC /* UIFont+FBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C7C22C36310004350EC /* UIFont+FBFont.m */; };
+		04228C9422C36C07004350EC /* LZHTTPRequestConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8422C36C06004350EC /* LZHTTPRequestConfig.m */; };
+		04228C9522C36C07004350EC /* LZHTTPSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8522C36C06004350EC /* LZHTTPSession.m */; };
+		04228C9622C36C07004350EC /* LZHTTPSessionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8822C36C06004350EC /* LZHTTPSessionSignal.m */; };
+		04228C9722C36C07004350EC /* LZHTTPRequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8A22C36C06004350EC /* LZHTTPRequestMaker.m */; };
+		04228C9822C36C07004350EC /* LZHTTPCompletionDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8B22C36C06004350EC /* LZHTTPCompletionDataModel.m */; };
+		04228C9922C36C07004350EC /* LZAutoLock.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04228C8E22C36C06004350EC /* LZAutoLock.mm */; };
+		04228C9A22C36C07004350EC /* LZURLConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C9122C36C06004350EC /* LZURLConfigure.m */; };
+		04228C9B22C36C07004350EC /* LZURLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C9222C36C06004350EC /* LZURLItem.m */; };
+		04228C9F22C36E16004350EC /* UIImage+FBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228C9E22C36E16004350EC /* UIImage+FBColor.m */; };
+		04228CA522C3787E004350EC /* ZZCPersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04228CA422C3787E004350EC /* ZZCPersistenceManager.m */; };
+		0491BA3622C7638000353982 /* FBDevelopKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0491BA3522C7638000353982 /* FBDevelopKit.podspec */; };
+		A32A850CEE47EBDF258EB68E /* Pods_FBDevelopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3AD359F9BDF314E4851740 /* Pods_FBDevelopKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04228C4E22C356C7004350EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04228C2D22C356C5004350EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04228C3422C356C5004350EC;
+			remoteInfo = FBDevelopKit;
+		};
+		04228C5922C356C7004350EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04228C2D22C356C5004350EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04228C3422C356C5004350EC;
+			remoteInfo = FBDevelopKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04228C3522C356C5004350EC /* FBDevelopKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBDevelopKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04228C3822C356C5004350EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04228C3922C356C5004350EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04228C3B22C356C5004350EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04228C3C22C356C5004350EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04228C3F22C356C5004350EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04228C4122C356C7004350EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04228C4422C356C7004350EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04228C4622C356C7004350EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04228C4722C356C7004350EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04228C4D22C356C7004350EC /* FBDevelopKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBDevelopKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04228C5122C356C7004350EC /* FBDevelopKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDevelopKitTests.m; sourceTree = "<group>"; };
+		04228C5322C356C7004350EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04228C5822C356C7004350EC /* FBDevelopKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBDevelopKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04228C5C22C356C7004350EC /* FBDevelopKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBDevelopKitUITests.m; sourceTree = "<group>"; };
+		04228C5E22C356C7004350EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04228C6C22C357D2004350EC /* FBSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBSingleton.h; sourceTree = "<group>"; };
+		04228C6E22C3587A004350EC /* FBPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBPath.h; sourceTree = "<group>"; };
+		04228C6F22C3587A004350EC /* FBPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBPath.m; sourceTree = "<group>"; };
+		04228C7222C35C85004350EC /* UIColor+FBColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FBColor.h"; sourceTree = "<group>"; };
+		04228C7322C35C85004350EC /* UIColor+FBColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FBColor.m"; sourceTree = "<group>"; };
+		04228C7622C35D4B004350EC /* NSData+FBEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FBEncryption.h"; sourceTree = "<group>"; };
+		04228C7722C35D4B004350EC /* NSData+FBEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FBEncryption.m"; sourceTree = "<group>"; };
+		04228C7A22C35FD3004350EC /* FBDevelopDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDevelopDefine.h; sourceTree = "<group>"; };
+		04228C7C22C36310004350EC /* UIFont+FBFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FBFont.m"; sourceTree = "<group>"; };
+		04228C7D22C36310004350EC /* UIFont+FBFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FBFont.h"; sourceTree = "<group>"; };
+		04228C8122C36C06004350EC /* LZAutoLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZAutoLock.h; sourceTree = "<group>"; };
+		04228C8322C36C06004350EC /* LZHTTPSessionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTPSessionSignal.h; sourceTree = "<group>"; };
+		04228C8422C36C06004350EC /* LZHTTPRequestConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTTPRequestConfig.m; sourceTree = "<group>"; };
+		04228C8522C36C06004350EC /* LZHTTPSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTTPSession.m; sourceTree = "<group>"; };
+		04228C8622C36C06004350EC /* LZHTTPCompletionDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTPCompletionDataModel.h; sourceTree = "<group>"; };
+		04228C8722C36C06004350EC /* LZHTTPRequestMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTPRequestMaker.h; sourceTree = "<group>"; };
+		04228C8822C36C06004350EC /* LZHTTPSessionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTTPSessionSignal.m; sourceTree = "<group>"; };
+		04228C8922C36C06004350EC /* LZHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTPRequestConfig.h; sourceTree = "<group>"; };
+		04228C8A22C36C06004350EC /* LZHTTPRequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTTPRequestMaker.m; sourceTree = "<group>"; };
+		04228C8B22C36C06004350EC /* LZHTTPCompletionDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHTTPCompletionDataModel.m; sourceTree = "<group>"; };
+		04228C8C22C36C06004350EC /* LZHTTPSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTPSession.h; sourceTree = "<group>"; };
+		04228C8D22C36C06004350EC /* LZHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHTTP.h; sourceTree = "<group>"; };
+		04228C8E22C36C06004350EC /* LZAutoLock.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LZAutoLock.mm; sourceTree = "<group>"; };
+		04228C9022C36C06004350EC /* LZURLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZURLItem.h; sourceTree = "<group>"; };
+		04228C9122C36C06004350EC /* LZURLConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZURLConfigure.m; sourceTree = "<group>"; };
+		04228C9222C36C06004350EC /* LZURLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZURLItem.m; sourceTree = "<group>"; };
+		04228C9322C36C06004350EC /* LZURLConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZURLConfigure.h; sourceTree = "<group>"; };
+		04228C9D22C36E16004350EC /* UIImage+FBColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FBColor.h"; sourceTree = "<group>"; };
+		04228C9E22C36E16004350EC /* UIImage+FBColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FBColor.m"; sourceTree = "<group>"; };
+		04228CA022C36EAE004350EC /* FBDevelopKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDevelopKit.h; sourceTree = "<group>"; };
+		04228CA122C36F91004350EC /* FBDevelopUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBDevelopUIDefine.h; sourceTree = "<group>"; };
+		04228CA322C3787E004350EC /* ZZCPersistenceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZCPersistenceManager.h; sourceTree = "<group>"; };
+		04228CA422C3787E004350EC /* ZZCPersistenceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZCPersistenceManager.m; sourceTree = "<group>"; };
+		0491BA3522C7638000353982 /* FBDevelopKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBDevelopKit.podspec; sourceTree = "<group>"; };
+		39C5FBAEA69EDA37257E9809 /* Pods-FBDevelopKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBDevelopKit.debug.xcconfig"; path = "Target Support Files/Pods-FBDevelopKit/Pods-FBDevelopKit.debug.xcconfig"; sourceTree = "<group>"; };
+		5994F2BCACAEE55156C27B98 /* Pods-FBDevelopKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBDevelopKit.release.xcconfig"; path = "Target Support Files/Pods-FBDevelopKit/Pods-FBDevelopKit.release.xcconfig"; sourceTree = "<group>"; };
+		8B3AD359F9BDF314E4851740 /* Pods_FBDevelopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBDevelopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04228C3222C356C5004350EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32A850CEE47EBDF258EB68E /* Pods_FBDevelopKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C4A22C356C7004350EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C5522C356C7004350EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04228C2C22C356C5004350EC = {
+			isa = PBXGroup;
+			children = (
+				0491BA3522C7638000353982 /* FBDevelopKit.podspec */,
+				04228C3722C356C5004350EC /* FBDevelopKit */,
+				04228C5022C356C7004350EC /* FBDevelopKitTests */,
+				04228C5B22C356C7004350EC /* FBDevelopKitUITests */,
+				04228C3622C356C5004350EC /* Products */,
+				342AE764A3B07674FCDFAA77 /* Pods */,
+				132E6ED11B8AE311435119CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04228C3622C356C5004350EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04228C3522C356C5004350EC /* FBDevelopKit.app */,
+				04228C4D22C356C7004350EC /* FBDevelopKitTests.xctest */,
+				04228C5822C356C7004350EC /* FBDevelopKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04228C3722C356C5004350EC /* FBDevelopKit */ = {
+			isa = PBXGroup;
+			children = (
+				04228C6A22C35791004350EC /* FBDevelopKit */,
+				04228C3822C356C5004350EC /* AppDelegate.h */,
+				04228C3922C356C5004350EC /* AppDelegate.m */,
+				04228C3B22C356C5004350EC /* ViewController.h */,
+				04228C3C22C356C5004350EC /* ViewController.m */,
+				04228C3E22C356C5004350EC /* Main.storyboard */,
+				04228C4122C356C7004350EC /* Assets.xcassets */,
+				04228C4322C356C7004350EC /* LaunchScreen.storyboard */,
+				04228C4622C356C7004350EC /* Info.plist */,
+				04228C4722C356C7004350EC /* main.m */,
+			);
+			path = FBDevelopKit;
+			sourceTree = "<group>";
+		};
+		04228C5022C356C7004350EC /* FBDevelopKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				04228C5122C356C7004350EC /* FBDevelopKitTests.m */,
+				04228C5322C356C7004350EC /* Info.plist */,
+			);
+			path = FBDevelopKitTests;
+			sourceTree = "<group>";
+		};
+		04228C5B22C356C7004350EC /* FBDevelopKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04228C5C22C356C7004350EC /* FBDevelopKitUITests.m */,
+				04228C5E22C356C7004350EC /* Info.plist */,
+			);
+			path = FBDevelopKitUITests;
+			sourceTree = "<group>";
+		};
+		04228C6A22C35791004350EC /* FBDevelopKit */ = {
+			isa = PBXGroup;
+			children = (
+				04228C9C22C36DCC004350EC /* FBImage */,
+				04228C7F22C363EE004350EC /* Http */,
+				04228C7B22C362E6004350EC /* FBFont */,
+				04228C7922C35FBE004350EC /* Define */,
+				04228C7522C35D2F004350EC /* Data */,
+				04228C7122C35AD6004350EC /* FBColor */,
+				04228C6D22C3584F004350EC /* FBPath */,
+				04228C6B22C357AE004350EC /* Singleton */,
+				04228CA022C36EAE004350EC /* FBDevelopKit.h */,
+			);
+			path = FBDevelopKit;
+			sourceTree = "<group>";
+		};
+		04228C6B22C357AE004350EC /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				04228C6C22C357D2004350EC /* FBSingleton.h */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		04228C6D22C3584F004350EC /* FBPath */ = {
+			isa = PBXGroup;
+			children = (
+				04228C6E22C3587A004350EC /* FBPath.h */,
+				04228C6F22C3587A004350EC /* FBPath.m */,
+			);
+			path = FBPath;
+			sourceTree = "<group>";
+		};
+		04228C7122C35AD6004350EC /* FBColor */ = {
+			isa = PBXGroup;
+			children = (
+				04228C7222C35C85004350EC /* UIColor+FBColor.h */,
+				04228C7322C35C85004350EC /* UIColor+FBColor.m */,
+			);
+			path = FBColor;
+			sourceTree = "<group>";
+		};
+		04228C7522C35D2F004350EC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04228C7622C35D4B004350EC /* NSData+FBEncryption.h */,
+				04228C7722C35D4B004350EC /* NSData+FBEncryption.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04228C7922C35FBE004350EC /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				04228C7A22C35FD3004350EC /* FBDevelopDefine.h */,
+				04228CA122C36F91004350EC /* FBDevelopUIDefine.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		04228C7B22C362E6004350EC /* FBFont */ = {
+			isa = PBXGroup;
+			children = (
+				04228C7D22C36310004350EC /* UIFont+FBFont.h */,
+				04228C7C22C36310004350EC /* UIFont+FBFont.m */,
+			);
+			path = FBFont;
+			sourceTree = "<group>";
+		};
+		04228C7F22C363EE004350EC /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				04228C8022C36C06004350EC /* LZHTTPManager */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		04228C8022C36C06004350EC /* LZHTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				04228C8122C36C06004350EC /* LZAutoLock.h */,
+				04228C8E22C36C06004350EC /* LZAutoLock.mm */,
+				04228C8D22C36C06004350EC /* LZHTTP.h */,
+				04228CA222C3784B004350EC /* ZZCPersistenceManager */,
+				04228C8222C36C06004350EC /* ZZCURLLoadManagement */,
+				04228C8F22C36C06004350EC /* ZZCURLManagement */,
+			);
+			path = LZHTTPManager;
+			sourceTree = "<group>";
+		};
+		04228C8222C36C06004350EC /* ZZCURLLoadManagement */ = {
+			isa = PBXGroup;
+			children = (
+				04228C8622C36C06004350EC /* LZHTTPCompletionDataModel.h */,
+				04228C8B22C36C06004350EC /* LZHTTPCompletionDataModel.m */,
+				04228C8922C36C06004350EC /* LZHTTPRequestConfig.h */,
+				04228C8422C36C06004350EC /* LZHTTPRequestConfig.m */,
+				04228C8722C36C06004350EC /* LZHTTPRequestMaker.h */,
+				04228C8A22C36C06004350EC /* LZHTTPRequestMaker.m */,
+				04228C8C22C36C06004350EC /* LZHTTPSession.h */,
+				04228C8522C36C06004350EC /* LZHTTPSession.m */,
+				04228C8322C36C06004350EC /* LZHTTPSessionSignal.h */,
+				04228C8822C36C06004350EC /* LZHTTPSessionSignal.m */,
+			);
+			path = ZZCURLLoadManagement;
+			sourceTree = "<group>";
+		};
+		04228C8F22C36C06004350EC /* ZZCURLManagement */ = {
+			isa = PBXGroup;
+			children = (
+				04228C9322C36C06004350EC /* LZURLConfigure.h */,
+				04228C9122C36C06004350EC /* LZURLConfigure.m */,
+				04228C9022C36C06004350EC /* LZURLItem.h */,
+				04228C9222C36C06004350EC /* LZURLItem.m */,
+			);
+			path = ZZCURLManagement;
+			sourceTree = "<group>";
+		};
+		04228C9C22C36DCC004350EC /* FBImage */ = {
+			isa = PBXGroup;
+			children = (
+				04228C9D22C36E16004350EC /* UIImage+FBColor.h */,
+				04228C9E22C36E16004350EC /* UIImage+FBColor.m */,
+			);
+			path = FBImage;
+			sourceTree = "<group>";
+		};
+		04228CA222C3784B004350EC /* ZZCPersistenceManager */ = {
+			isa = PBXGroup;
+			children = (
+				04228CA322C3787E004350EC /* ZZCPersistenceManager.h */,
+				04228CA422C3787E004350EC /* ZZCPersistenceManager.m */,
+			);
+			path = ZZCPersistenceManager;
+			sourceTree = "<group>";
+		};
+		132E6ED11B8AE311435119CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B3AD359F9BDF314E4851740 /* Pods_FBDevelopKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		342AE764A3B07674FCDFAA77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39C5FBAEA69EDA37257E9809 /* Pods-FBDevelopKit.debug.xcconfig */,
+				5994F2BCACAEE55156C27B98 /* Pods-FBDevelopKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04228C3422C356C5004350EC /* FBDevelopKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04228C6122C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKit" */;
+			buildPhases = (
+				A652F91D23B6347FF3DDBD3A /* [CP] Check Pods Manifest.lock */,
+				04228C3122C356C5004350EC /* Sources */,
+				04228C3222C356C5004350EC /* Frameworks */,
+				04228C3322C356C5004350EC /* Resources */,
+				94C2CEE419AF0BC0E7D8AE37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBDevelopKit;
+			productName = FBDevelopKit;
+			productReference = 04228C3522C356C5004350EC /* FBDevelopKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04228C4C22C356C7004350EC /* FBDevelopKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04228C6422C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKitTests" */;
+			buildPhases = (
+				04228C4922C356C7004350EC /* Sources */,
+				04228C4A22C356C7004350EC /* Frameworks */,
+				04228C4B22C356C7004350EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04228C4F22C356C7004350EC /* PBXTargetDependency */,
+			);
+			name = FBDevelopKitTests;
+			productName = FBDevelopKitTests;
+			productReference = 04228C4D22C356C7004350EC /* FBDevelopKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04228C5722C356C7004350EC /* FBDevelopKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04228C6722C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKitUITests" */;
+			buildPhases = (
+				04228C5422C356C7004350EC /* Sources */,
+				04228C5522C356C7004350EC /* Frameworks */,
+				04228C5622C356C7004350EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04228C5A22C356C7004350EC /* PBXTargetDependency */,
+			);
+			name = FBDevelopKitUITests;
+			productName = FBDevelopKitUITests;
+			productReference = 04228C5822C356C7004350EC /* FBDevelopKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04228C2D22C356C5004350EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = zhaoyang;
+				TargetAttributes = {
+					04228C3422C356C5004350EC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					04228C4C22C356C7004350EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04228C3422C356C5004350EC;
+					};
+					04228C5722C356C7004350EC = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04228C3422C356C5004350EC;
+					};
+				};
+			};
+			buildConfigurationList = 04228C3022C356C5004350EC /* Build configuration list for PBXProject "FBDevelopKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04228C2C22C356C5004350EC;
+			productRefGroup = 04228C3622C356C5004350EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04228C3422C356C5004350EC /* FBDevelopKit */,
+				04228C4C22C356C7004350EC /* FBDevelopKitTests */,
+				04228C5722C356C7004350EC /* FBDevelopKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04228C3322C356C5004350EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04228C4522C356C7004350EC /* LaunchScreen.storyboard in Resources */,
+				04228C4222C356C7004350EC /* Assets.xcassets in Resources */,
+				04228C4022C356C5004350EC /* Main.storyboard in Resources */,
+				0491BA3622C7638000353982 /* FBDevelopKit.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C4B22C356C7004350EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C5622C356C7004350EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94C2CEE419AF0BC0E7D8AE37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBDevelopKit/Pods-FBDevelopKit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBDevelopKit/Pods-FBDevelopKit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FBDevelopKit/Pods-FBDevelopKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A652F91D23B6347FF3DDBD3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBDevelopKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04228C3122C356C5004350EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04228C7022C3587A004350EC /* FBPath.m in Sources */,
+				04228C3D22C356C5004350EC /* ViewController.m in Sources */,
+				04228C9B22C36C07004350EC /* LZURLItem.m in Sources */,
+				04228C4822C356C7004350EC /* main.m in Sources */,
+				04228C9522C36C07004350EC /* LZHTTPSession.m in Sources */,
+				04228C7822C35D4B004350EC /* NSData+FBEncryption.m in Sources */,
+				04228CA522C3787E004350EC /* ZZCPersistenceManager.m in Sources */,
+				04228C3A22C356C5004350EC /* AppDelegate.m in Sources */,
+				04228C9622C36C07004350EC /* LZHTTPSessionSignal.m in Sources */,
+				04228C9722C36C07004350EC /* LZHTTPRequestMaker.m in Sources */,
+				04228C9A22C36C07004350EC /* LZURLConfigure.m in Sources */,
+				04228C9922C36C07004350EC /* LZAutoLock.mm in Sources */,
+				04228C9422C36C07004350EC /* LZHTTPRequestConfig.m in Sources */,
+				04228C9822C36C07004350EC /* LZHTTPCompletionDataModel.m in Sources */,
+				04228C7E22C36310004350EC /* UIFont+FBFont.m in Sources */,
+				04228C7422C35C85004350EC /* UIColor+FBColor.m in Sources */,
+				04228C9F22C36E16004350EC /* UIImage+FBColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C4922C356C7004350EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04228C5222C356C7004350EC /* FBDevelopKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04228C5422C356C7004350EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04228C5D22C356C7004350EC /* FBDevelopKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04228C4F22C356C7004350EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04228C3422C356C5004350EC /* FBDevelopKit */;
+			targetProxy = 04228C4E22C356C7004350EC /* PBXContainerItemProxy */;
+		};
+		04228C5A22C356C7004350EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04228C3422C356C5004350EC /* FBDevelopKit */;
+			targetProxy = 04228C5922C356C7004350EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04228C3E22C356C5004350EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04228C3F22C356C5004350EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04228C4322C356C7004350EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04228C4422C356C7004350EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04228C5F22C356C7004350EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04228C6022C356C7004350EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04228C6222C356C7004350EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C5FBAEA69EDA37257E9809 /* Pods-FBDevelopKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04228C6322C356C7004350EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5994F2BCACAEE55156C27B98 /* Pods-FBDevelopKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04228C6522C356C7004350EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBDevelopKit.app/FBDevelopKit";
+			};
+			name = Debug;
+		};
+		04228C6622C356C7004350EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBDevelopKit.app/FBDevelopKit";
+			};
+			name = Release;
+		};
+		04228C6822C356C7004350EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FBDevelopKit;
+			};
+			name = Debug;
+		};
+		04228C6922C356C7004350EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D68Z7HL3T6;
+				INFOPLIST_FILE = FBDevelopKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iFREEGROUP.first.FBDevelopKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FBDevelopKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04228C3022C356C5004350EC /* Build configuration list for PBXProject "FBDevelopKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04228C5F22C356C7004350EC /* Debug */,
+				04228C6022C356C7004350EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04228C6122C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04228C6222C356C7004350EC /* Debug */,
+				04228C6322C356C7004350EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04228C6422C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04228C6522C356C7004350EC /* Debug */,
+				04228C6622C356C7004350EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04228C6722C356C7004350EC /* Build configuration list for PBXNativeTarget "FBDevelopKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04228C6822C356C7004350EC /* Debug */,
+				04228C6922C356C7004350EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04228C2D22C356C5004350EC /* Project object */;
+}
