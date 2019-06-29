@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :git => "https://gitee.com/lzy663869/FBDevelopKit.git",:commit => "eb2aacbe66fba345d7560d25a09263c0de85e066"}
+  spec.source = { :git => "https://gitee.com/lzy663869/FBDevelopKit.git",:commit => "d9c77f7fe5d463b77114a1ce4e7b1a753a0a6ebd"}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "FBDevelopKit/FBDevelopKit/*.{h,m}"
+  spec.source_files  = "FBDevelopKit/FBDevelopKit/*.{h,m}","FBDevelopKit/FBDevelopKit/*/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
