@@ -91,7 +91,33 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "FBDevelopKit/FBDevelopKit/*.{h,m}","FBDevelopKit/FBDevelopKit/*/*.{h,m}"
+  spec.source_files  = "FBDevelopKit/FBDevelopKit/*.{h,m}"
+
+  spec.subspec 'FBImage' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/FBImage/*.{h,m}'
+  end
+  spec.subspec 'Http' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/Http/**/*.{h,m}','FBDevelopKit/FBDevelopKit/Http/**/**/*.{h,m}'
+  end
+  spec.subspec 'FBFont' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/FBFont/*.{h,m}'
+  end
+  spec.subspec 'Define' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/Define/*.{h,m}'
+  end
+  spec.subspec 'Data' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/Data/*.{h,m}'
+  end
+  spec.subspec 'FBColor' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/FBColor/*.{h,m}'
+  end
+  spec.subspec 'FBPath' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/FBPath/*.{h,m}'
+  end
+  spec.subspec 'Singleton' do |ss|
+    ss.source_files = 'FBDevelopKit/FBDevelopKit/Singleton/*.{h,m}'
+  end
+
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
