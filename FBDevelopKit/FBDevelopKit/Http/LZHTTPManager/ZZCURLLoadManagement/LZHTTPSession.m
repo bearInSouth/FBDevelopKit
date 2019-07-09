@@ -514,7 +514,7 @@ typedef void(^completeBlock)(void);
 
 #pragma mark 私有方法
 - (void)handleSignal:(LZHTTPSessionSignal *)signal responseObject:(id)responseObject error:(NSError *)error{
-    NSInteger successCode = signal.configure.successCode;
+//    NSInteger successCode = signal.configure.successCode;
     
     NSObject *httpModel = [[signal.configure.httpModel class] new];
     
@@ -693,11 +693,11 @@ typedef void(^completeBlock)(void);
 void setUrlId(NSString *module_id,NSString *url_id,NSString *formal_url,NSString *dev_url){
     NSURL *oriUrl = [NSURL URLWithString:formal_url];
     NSURL *oriDevUrl = [NSURL URLWithString:dev_url];
-    
+
     [[LZURLConfigure shareInstance] addUrlItem:^(LZURLItem *urlItem) {
         urlItem.url_id = url_id;
         urlItem.module_id = module_id;
-        
+
         urlItem.scheme = oriUrl.scheme;
         urlItem.formalHost = oriUrl.host;
         urlItem.devHost = oriDevUrl.host;
