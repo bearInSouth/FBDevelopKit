@@ -106,7 +106,7 @@ NS_ASSUME_NONNULL_BEGIN
 static inline void setUrlId(NSString *module_id,NSString *url_id,NSString *formal_url,NSString *dev_url);
 
 static inline NSString *urlAppendPath(NSString *path){
-    return [NSString stringWithFormat:@"%@%@",@"https://newapi.ifreegroup.net/",path];
+    return [NSString stringWithFormat:@"%@%@",@"http://newapi.ifreegroup.net:8000/",path];
 }
 
 NS_ASSUME_NONNULL_END
