@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FBDevelopKit/FBDevelopKit.h"
+#import "LZHTTPSession.h"
 
 @interface ViewController ()
 
@@ -44,16 +45,14 @@
 }
 
 - (void)testBtnClick{
-    [ZZCPersistenceManager savePersistenceData:@{@"ddd":@"sssss",@"lzy":@"fnd",@"array":@[@"ddd"],@"dic":@{@"dd":@"fff"}} WithFileName:@"test2" document:@"Library/llsls/lzy" complete:^(BOOL complete) {
-        NSLog(@"%d",complete);
-    }];
+    NSString *baseStr = @"https://m.zuzuche.com/";
+    
+    [[LZHTTPSession shareInstance] changeBaseString:baseStr];
 }
 
 
 - (void)testBtnClick1{
-    [ZZCPersistenceManager getPersistenceDataWithFileName:@"test2" document:@"Library/llsls/lzy" complete:^(id  _Nonnull data) {
-        NSLog(@"%@",data);
-    }];
+    NSLog(@"%@\n%@",[LZHTTPSession shareInstance].allBaseStringArr,[LZHTTPSession shareInstance].baseStr);
 }
 
 @end

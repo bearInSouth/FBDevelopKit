@@ -16,22 +16,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (LZHTTPSession *)shareInstance;
 
-/**
- 外部设置环境
- 
- @param dev true：dev    false：正式环境
- */
-+ (void)setEnviStateIfDev:(BOOL)dev;
+/* 租租车使用的环境管理暂不适用Mogo，先屏蔽掉  */
 
-/**
- 设置自定义域名
- */
-+ (void)setCustomHost:(NSString *)host;
-
-/**
- 对某个base_id设置自定义域名
- */
-+ (void)setCustomHost:(NSString *)host baseId:(NSString *)base_id;
+///**
+// 外部设置环境
+//
+// @param dev true：dev    false：正式环境
+// */
+//+ (void)setEnviStateIfDev:(BOOL)dev;
+//
+///**
+// 设置自定义域名
+// */
+//+ (void)setCustomHost:(NSString *)host;
+//
+///**
+// 对某个base_id设置自定义域名
+// */
+//+ (void)setCustomHost:(NSString *)host baseId:(NSString *)base_id;
 
 /**
  注册header公参
@@ -56,6 +58,15 @@ NS_ASSUME_NONNULL_BEGIN
  清除所有的内存缓存
  */
 - (void)cleanAllOlCacheData;
+
+
+- (void)changeBaseString:(NSString *)baseStr;
+
+
+@property (strong, nonatomic, readonly) NSString *baseStr;
+
+@property (strong, nonatomic, readonly) NSMutableArray<NSString *> *allBaseStringArr;
+
 
 /**
  缓存地址
@@ -106,7 +117,7 @@ NS_ASSUME_NONNULL_BEGIN
 static inline void setUrlId(NSString *module_id,NSString *url_id,NSString *formal_url,NSString *dev_url);
 
 static inline NSString *urlAppendPath(NSString *path){
-    return [NSString stringWithFormat:@"%@%@",@"http://newapi.ifreegroup.net:8000/",path];
+    return [[LZHTTPSession shareInstance].baseStr stringByAppendingPathComponent:path];
 }
 
 NS_ASSUME_NONNULL_END

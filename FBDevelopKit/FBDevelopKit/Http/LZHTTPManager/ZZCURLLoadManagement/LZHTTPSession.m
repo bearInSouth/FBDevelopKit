@@ -14,6 +14,8 @@
 #import "LZHTTPCompletionDataModel.h"
 #import "LZHTTPRequestConfig.h"
 
+#import "ZZCPersistenceManager.h"
+
 #import "MJExtension.h"
 #import <CommonCrypto/CommonDigest.h>
 
@@ -69,6 +71,9 @@ typedef void(^completeBlock)(void);
         _ioQueue = dispatch_queue_create("com.zuzuche.com.LZHTTPSession.io", DISPATCH_QUEUE_CONCURRENT);
         _bindQueue = dispatch_queue_create("com.zuzuche.com.LZHTTPSession.bind", DISPATCH_QUEUE_CONCURRENT);
         
+        NSArray *baseStrArr = [ZZCPersistenceManager syncGetPersistenceDataWithFileName:@"baseStrArrId"];
+        _allBaseStringArr = baseStrArr ? [baseStrArr mutableCopy] : [NSMutableArray array];
+        
         //缓存
         if (![[NSFileManager defaultManager] fileExistsAtPath:_cacheDirec]) {
             [[NSFileManager defaultManager] createDirectoryAtPath:_cacheDirec withIntermediateDirectories:true attributes:nil error:nil];
@@ -92,6 +97,18 @@ typedef void(^completeBlock)(void);
 
 + (void)setCustomHost:(NSString *)host baseId:(NSString *)base_id{
     [[LZURLConfigure shareInstance] setCustomHost:host baseId:base_id];
+}
+
+- (void)changeBaseString:(NSString *)baseStr{
+    if ([_allBaseStringArr containsObject:baseStr]) {
+        [_allBaseStringArr removeObject:baseStr];
+    }
+    
+    [_allBaseStringArr addObject:baseStr];
+}
+
+- (NSString *)baseStr{
+    return [_allBaseStringArr lastObject];
 }
 
 #pragma mark 配置参数
