@@ -50,7 +50,6 @@
     [[LZHTTPSession shareInstance] changeBaseString:baseStr];
 }
 
-
 - (void)testBtnClick1{
     NSLog(@"%@\n%@",[LZHTTPSession shareInstance].allBaseStringArr,[LZHTTPSession shareInstance].baseStr);
 }

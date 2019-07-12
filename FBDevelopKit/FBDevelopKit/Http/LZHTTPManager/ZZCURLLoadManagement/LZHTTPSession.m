@@ -72,7 +72,7 @@ typedef void(^completeBlock)(void);
         _bindQueue = dispatch_queue_create("com.zuzuche.com.LZHTTPSession.bind", DISPATCH_QUEUE_CONCURRENT);
         
         NSArray *baseStrArr = [ZZCPersistenceManager syncGetPersistenceDataWithFileName:@"baseStrArrId"];
-        _allBaseStringArr = baseStrArr ? [baseStrArr mutableCopy] : [NSMutableArray array];
+        _allBaseStringArr = baseStrArr ? [baseStrArr mutableCopy] : [@[@"https://newapi.ifreegroup.net/index.php/"] mutableCopy];
         
         //缓存
         if (![[NSFileManager defaultManager] fileExistsAtPath:_cacheDirec]) {
