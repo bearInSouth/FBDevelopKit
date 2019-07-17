@@ -438,9 +438,11 @@ typedef void(^completeBlock)(void);
         }
         
         NSLog(@"全部完成，外部调用");
-        if (complete) {
-            complete();
-        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (complete) {
+                complete();
+            }
+        });
         
         [signals enumerateObjectsUsingBlock:^(LZHTTPSessionSignal * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             
