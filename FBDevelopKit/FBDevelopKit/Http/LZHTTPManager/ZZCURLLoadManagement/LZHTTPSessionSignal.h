@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  请求配置
  */
-@property (strong, nonatomic) LZHTTPRequestConfig *configure;
+@property (copy, nonatomic) LZHTTPRequestConfig *configure;
 
 #pragma mark 发起请求、读取缓存
 

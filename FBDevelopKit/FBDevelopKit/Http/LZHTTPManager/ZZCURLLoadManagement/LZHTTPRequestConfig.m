@@ -8,7 +8,26 @@
 
 #import "LZHTTPRequestConfig.h"
 
+@interface LZHTTPRequestConfig ()<NSCopying>
+
+@end
+
 @implementation LZHTTPRequestConfig
+
+- (id)copyWithZone:(NSZone *)zone{
+    LZHTTPRequestConfig *config = [[LZHTTPRequestConfig allocWithZone:zone] init];
+    
+    config.method = self.method;
+    config.url_id = self.url_id;
+    config.para = self.para;
+    config.cachePolicy = self.cachePolicy;
+    config.timeout = self.timeout;
+    config.httpModel = self.httpModel;
+    config.uniqueSignKey = self.uniqueSignKey;
+    config.successCode = self.successCode;
+    
+    return config;
+}
 
 - (instancetype)init{
     if ([super init]) {
