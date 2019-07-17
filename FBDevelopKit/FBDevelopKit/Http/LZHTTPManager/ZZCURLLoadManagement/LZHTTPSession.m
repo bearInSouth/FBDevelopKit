@@ -401,7 +401,7 @@ typedef void(^completeBlock)(void);
     }];
 }
 
-- (void)requestBindedSignal:(NSArray<LZHTTPSessionSignal *> *)signals{
+- (void)requestBindedSignal:(NSArray<LZHTTPSessionSignal *> *)signals complete:(nonnull dispatch_block_t)complete{
     
     dispatch_semaphore_t request_signal = dispatch_semaphore_create(0);
     
@@ -438,6 +438,9 @@ typedef void(^completeBlock)(void);
         }
         
         NSLog(@"全部完成，外部调用");
+        if (complete) {
+            complete();
+        }
         
         [signals enumerateObjectsUsingBlock:^(LZHTTPSessionSignal * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             

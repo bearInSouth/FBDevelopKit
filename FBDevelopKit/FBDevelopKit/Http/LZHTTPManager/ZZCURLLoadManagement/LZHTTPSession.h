@@ -110,7 +110,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)readCache:(LZHTTPSessionSignal *)signal;
 
-- (void)requestBindedSignal:(NSArray<LZHTTPSessionSignal *> *)signals;
+- (void)requestBindedSignal:(NSArray<LZHTTPSessionSignal *> *)signals complete:(dispatch_block_t)complete;
 
 @end
 
