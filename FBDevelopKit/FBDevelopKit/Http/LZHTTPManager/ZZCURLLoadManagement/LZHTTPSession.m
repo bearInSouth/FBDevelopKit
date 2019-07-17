@@ -446,7 +446,7 @@ typedef void(^completeBlock)(void);
         
         [signals enumerateObjectsUsingBlock:^(LZHTTPSessionSignal * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             
-            dispatch_async(obj.configure.completionQueue, ^{
+            dispatch_async(obj.configure.completionQueue ? : dispatch_get_main_queue(), ^{
                 LZHTTPSessionSignal *signalObj = (LZHTTPSessionSignal *)obj;
                 
                 [dataModeArr enumerateObjectsUsingBlock:^(LZHTTPCompletionDataModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
