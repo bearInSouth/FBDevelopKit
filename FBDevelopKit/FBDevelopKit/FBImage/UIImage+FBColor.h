@@ -16,6 +16,18 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable UIImage *)createImageWithColor:(nullable UIColor *)color size:(CGSize)size;
 + (nullable UIImage *)createImageWithColor:(nullable UIColor *)color size:(CGSize)size cornerRadius:(CGFloat)cornerRadius;
 
+- (UIImage *)imageByRoundCornerRadius:(CGFloat)radius;
+
+- (UIImage *)imageByRoundCornerRadius:(CGFloat)radius
+                             borderWidth:(CGFloat)borderWidth
+                             borderColor:(UIColor *)borderColor;
+
+- (UIImage *)imageByRoundCornerRadius:(CGFloat)radius
+                                 corners:(UIRectCorner)corners
+                             borderWidth:(CGFloat)borderWidth
+                             borderColor:(UIColor *)borderColor
+                          borderLineJoin:(CGLineJoin)borderLineJoin;
+
 @end
 
 NS_ASSUME_NONNULL_END
