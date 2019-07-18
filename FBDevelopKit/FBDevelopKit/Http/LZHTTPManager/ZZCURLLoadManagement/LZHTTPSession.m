@@ -105,6 +105,10 @@ typedef void(^completeBlock)(void);
     }
     
     [_allBaseStringArr addObject:baseStr];
+    
+    [ZZCPersistenceManager savePersistenceData:_allBaseStringArr WithFileName:@"baseStrArrId" complete:^(BOOL complete) {
+        
+    }];
 }
 
 - (NSString *)baseStr{

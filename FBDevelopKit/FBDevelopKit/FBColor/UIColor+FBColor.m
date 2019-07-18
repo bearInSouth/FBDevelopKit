@@ -64,7 +64,57 @@
     return [[self colorWithHexString:hexString] colorWithAlphaComponent:alpha];
 }
 
++ (UIColor *)MogoBlue{
+    return [self colorWithHexString:@"#1682FB"];
+}
 
++ (UIColor *)MogoMainBlue{
+    return [self colorWithHexString:@"#456EFF"];
+}
+
++ (UIColor *)MogoYellow{
+    return [self colorWithHexString:@"#FBD341"];
+}
+
++ (UIColor *)MogoComBlack{
+    return [self colorWithHexString:@"#001E32"];
+}
+
++ (UIColor *)MogoRed{
+    return [self colorWithHexString:@"#FF5249"];
+}
+
++ (UIColor *)MogoDarkRed{
+    return [self colorWithHexString:@"#F44321"];
+}
+
++ (UIColor *)MogoBgGray{
+    return [self colorWithHexString:@"#F5F5F5"];
+}
+
++ (UIColor *)MogoLightGray{
+    return [self colorWithHexString:@"#EBF0F5"];
+}
+
++ (UIColor *)MogoMidGray{
+    return [self colorWithHexString:@"#C8D2E6"];
+}
+
++ (UIColor *)MogoComGray{
+    return [self colorWithHexString:@"#8791AA"];
+}
+
++ (UIColor *)MogoGreen{
+    return [self colorWithHexString:@"#0FC9E7"];
+}
+
++ (UIColor *)MogoBlack{
+    return [self colorWithHexString:@"#07003B"];
+}
+
++ (UIColor *)MogoCommonShadow{
+    return [self colorWithHexString:@"#8E8E93"];
+}
 
 
 
