@@ -569,14 +569,12 @@ typedef void(^completeBlock)(void);
             NSString *errorString = [dict objectForKey:@"error"];
             NSInteger code = [dict[@"code"] integerValue];
             
-            if (!errorString || ![errorString isKindOfClass:[NSNull class]]) {
+            if (![errorString isKindOfClass:[NSNull class]]) {
                 //错误类型
-                NSString *msg = nil;
-                
-                msg = dict[@"error"];
+                NSString *msg = dict[@"msg"] ? : dict[@"error"];
                 
                 if (msg.length == 0) {
-                    msg = dict[@"msg"] ? : @"";
+                    msg = @"";
                 }
                 
                 if (signal.fail) {
